@@ -92,6 +92,7 @@ drawable splash_progress_bg
 drawable version_bg
 id bottomContainer
 id bottomNav
+id btnBack
 id btnContinueResume
 id btnMenu
 id btnNext
@@ -143,10 +144,16 @@ id tvVersion
 id tvWelcomeSubtitle
 id tvWelcomeTitle
 id viewPager
+layout activity_ai_improve
+layout activity_create_resume
 layout activity_dashboard
+layout activity_export_resume
 layout activity_main
+layout activity_my_resume
 layout activity_onboarding
+layout activity_profile
 layout activity_splash
+layout activity_template
 layout fragment_onboarding
 layout item_template
 mipmap ic_launcher

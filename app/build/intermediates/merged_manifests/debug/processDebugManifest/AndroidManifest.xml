@@ -44,6 +44,24 @@
             android:name="com.kharchamate.resumaster.ui.dashboard.DashboardActivity"
             android:exported="false" />
         <activity
+            android:name="com.kharchamate.resumaster.ui.dashboard.CreateResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.dashboard.MyResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.dashboard.AiImproveActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.dashboard.ExportResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.dashboard.TemplateActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.dashboard.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name="com.kharchamate.resumaster.MainActivity"
             android:exported="false" />
 

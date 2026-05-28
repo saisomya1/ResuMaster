@@ -3361,6 +3361,7 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnBack
 id btnContinueResume
 id btnMenu
 id btnNext
@@ -3943,10 +3944,16 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_ai_improve
+layout activity_create_resume
 layout activity_dashboard
+layout activity_export_resume
 layout activity_main
+layout activity_my_resume
 layout activity_onboarding
+layout activity_profile
 layout activity_splash
+layout activity_template
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

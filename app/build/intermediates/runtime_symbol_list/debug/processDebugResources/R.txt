@@ -3360,6 +3360,7 @@ int id bounce 0x7f080063
 int id bounceBoth 0x7f080064
 int id bounceEnd 0x7f080065
 int id bounceStart 0x7f080066
+int id btnBack 0x7f08023a
 int id btnContinueResume 0x7f080219
 int id btnMenu 0x7f08021a
 int id btnNext 0x7f080067
@@ -3942,10 +3943,16 @@ int layout abc_search_dropdown_item_icons_2line 0x7f0b0018
 int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
+int layout activity_ai_improve 0x7f0b0072
+int layout activity_create_resume 0x7f0b0073
 int layout activity_dashboard 0x7f0b0070
+int layout activity_export_resume 0x7f0b0074
 int layout activity_main 0x7f0b001c
+int layout activity_my_resume 0x7f0b0075
 int layout activity_onboarding 0x7f0b001d
+int layout activity_profile 0x7f0b0076
 int layout activity_splash 0x7f0b001e
+int layout activity_template 0x7f0b0077
 int layout custom_dialog 0x7f0b001f
 int layout design_bottom_navigation_item 0x7f0b0020
 int layout design_bottom_sheet_dialog 0x7f0b0021
