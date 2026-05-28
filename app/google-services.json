@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "848494187606",
+    "project_id": "resumaster-78127",
+    "storage_bucket": "resumaster-78127.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848494187606:android:22867aef9ecffe9d50d7f7",
+        "android_client_info": {
+          "package_name": "com.kharchamate.resumaster"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbZamh5NQWb_6t1VhePCDLc4VkrLiGP6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

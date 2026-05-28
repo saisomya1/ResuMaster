@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Very simple structure -->
+    <View
+        android:layout_width="48dp"
+        android:layout_height="6dp"
+        android:background="#B0BEC5" />
+        
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="12dp"
+        android:background="#ECEFF1" />
+        
+    <View
+        android:layout_width="80dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="6dp"
+        android:background="#ECEFF1" />
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="24dp"
+        android:background="#CFD8DC" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="8dp"
+        android:background="#ECEFF1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="#ECEFF1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="4dp"
+        android:background="#ECEFF1" />
+
+</LinearLayout>

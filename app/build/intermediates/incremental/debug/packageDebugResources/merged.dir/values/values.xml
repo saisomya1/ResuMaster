@@ -62,6 +62,11 @@
     <string name="app_name">ResuMaster</string>
     <string name="btn_skip">Skip</string>
     <string name="developed_by">Developed by\nSai Somya Ranjan</string>
+    <string name="gcm_defaultSenderId" translatable="false">848494187606</string>
+    <string name="google_api_key" translatable="false">AIzaSyDbZamh5NQWb_6t1VhePCDLc4VkrLiGP6Q</string>
+    <string name="google_app_id" translatable="false">1:848494187606:android:22867aef9ecffe9d50d7f7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDbZamh5NQWb_6t1VhePCDLc4VkrLiGP6Q</string>
+    <string name="google_storage_bucket" translatable="false">resumaster-78127.firebasestorage.app</string>
     <string name="onboarding_1_desc">Build professional, ATS-friendly resumes that get you noticed by top recruiters.</string>
     <string name="onboarding_1_title"><![CDATA[Create Stunning<br>Resumes <font color="#6C4DFF">Effortlessly</font>]]></string>
     <string name="onboarding_2_desc">Get AI suggestions for skills, summary, experience, and more to enhance your resume.</string>
@@ -69,6 +74,7 @@
     <string name="onboarding_3_desc">Choose from a variety of modern and professional templates that suit your style.</string>
     <string name="onboarding_3_title"><![CDATA[Multiple Templates<br>For <font color="#6C4DFF">Every Career</font>]]></string>
     <string name="onboarding_next">Next</string>
+    <string name="project_id" translatable="false">resumaster-78127</string>
     <string name="splash_subtitle">AI Powered Resume Builder</string>
     <string name="splash_version">v1.0.0</string>
     <style name="Base.Theme.ResuMaster" parent="Theme.Material3.DayNight.NoActionBar">

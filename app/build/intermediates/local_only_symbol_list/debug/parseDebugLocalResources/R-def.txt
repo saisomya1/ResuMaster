@@ -267,6 +267,11 @@ mipmap ic_launcher_round
 string app_name
 string btn_skip
 string developed_by
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string onboarding_1_desc
 string onboarding_1_title
 string onboarding_2_desc
@@ -274,6 +279,7 @@ string onboarding_2_title
 string onboarding_3_desc
 string onboarding_3_title
 string onboarding_next
+string project_id
 string splash_subtitle
 string splash_version
 style Base.Theme.ResuMaster

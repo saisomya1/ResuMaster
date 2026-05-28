@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -39,13 +40,13 @@ android {
             JavaVersion.VERSION_17
     }
 
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
     buildFeatures {
         viewBinding = true
     }
-}
-
-kotlin {
-    jvmToolchain(17)
 }
 
 dependencies {
@@ -92,6 +93,31 @@ dependencies {
 
     implementation(
         "androidx.viewpager2:viewpager2:1.1.0"
+    )
+
+    // Firebase BOM
+    implementation(
+        platform("com.google.firebase:firebase-bom:33.12.0")
+    )
+
+    // Firebase Firestore
+    implementation(
+        "com.google.firebase:firebase-firestore-ktx"
+    )
+
+    // Firebase Analytics
+    implementation(
+        "com.google.firebase:firebase-analytics-ktx"
+    )
+
+    // Firebase Auth
+    implementation(
+        "com.google.firebase:firebase-auth-ktx"
+    )
+
+    // Google Sign-In
+    implementation(
+        "com.google.android.gms:play-services-auth:21.2.0"
     )
 
     testImplementation(

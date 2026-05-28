@@ -1,122 +1,118 @@
 [
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\layout_preview_modern.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\layout_preview_modern.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_ai_improve.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_ai_improve.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\item_project_form.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\item_project_form.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/item_template.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/item_template.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_education.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_education.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/layout_preview_professional.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/layout_preview_professional.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\layout_preview_creative.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\layout_preview_creative.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_resume_builder.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_resume_builder.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\item_experience_form.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\item_experience_form.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_splash.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\layout_preview_minimal.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\layout_preview_minimal.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/fragment_onboarding.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/fragment_onboarding.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\item_template_card.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\item_template_card.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_experience.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_experience.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_profile.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_profile.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/item_template_card.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/item_template_card.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_ai_improve.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_ai_improve.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_export_resume.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_export_resume.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_create_resume.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_create_resume.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_resume_pdf_preview.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_resume_pdf_preview.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_template_selection.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_template_selection.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_onboarding.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_onboarding.xml"
     },
     {
-        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/activity_resume_pdf_preview.xml",
-        "source": "com.kharchamate.resumaster.app-main-53:/layout/activity_resume_pdf_preview.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_create_resume.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_create_resume.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\item_template.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\item_template.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_my_resume.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_my_resume.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_experience.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_experience.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/layout_preview_modern.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/layout_preview_modern.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_export_resume.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_export_resume.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/layout_preview_minimal.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/layout_preview_minimal.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_summary_preview.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_summary_preview.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/layout_preview_creative.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/layout_preview_creative.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_resume_builder.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_resume_builder.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/item_project_form.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/item_project_form.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\layout_preview_corporate.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\layout_preview_corporate.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_template.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_template.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_dashboard.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_dashboard.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_profile.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_template.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_template.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_summary_preview.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_summary_preview.xml"
     },
     {
-        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/activity_summary_preview.xml",
-        "source": "com.kharchamate.resumaster.app-main-53:/layout/activity_summary_preview.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/item_experience_form.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/item_experience_form.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_onboarding.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_onboarding.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_template_selection.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_template_selection.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\fragment_onboarding.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\fragment_onboarding.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_dashboard.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_my_resume.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_my_resume.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/item_education_form.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/item_education_form.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_main.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/layout_preview_corporate.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/layout_preview_corporate.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\layout_preview_professional.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\layout_preview_professional.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_skills_projects.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_skills_projects.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\item_education_form.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\item_education_form.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_education.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_education.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_skills_projects.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_skills_projects.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_ai_resume.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_ai_resume.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_splash.xml"
-    },
-    {
-        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/activity_ai_resume.xml",
-        "source": "com.kharchamate.resumaster.app-main-53:/layout/activity_ai_resume.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-60:/layout/activity_main.xml",
+        "source": "com.kharchamate.resumaster.app-main-63:/layout/activity_main.xml"
     }
 ]
