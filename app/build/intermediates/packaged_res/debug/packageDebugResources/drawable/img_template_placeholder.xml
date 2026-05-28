@@ -1,0 +1,54 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="150dp"
+    android:viewportWidth="120"
+    android:viewportHeight="150">
+    <!-- Border -->
+    <path
+        android:fillColor="#F8FAFC"
+        android:strokeColor="#CBD5E1"
+        android:strokeWidth="2"
+        android:pathData="M 5,5 H 115 V 145 H 5 Z" />
+    <!-- Header decoration (Simulates a profile avatar box + name lines) -->
+    <!-- Profile picture block -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 12,12 H 32 V 32 H 12 Z" />
+    <!-- Title name lines -->
+    <path
+        android:fillColor="#08546A"
+        android:pathData="M 38,15 H 85 V 19 H 38 Z" />
+    <path
+        android:fillColor="#607B96"
+        android:pathData="M 38,24 H 70 V 27 H 38 Z" />
+    <!-- Body lines -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 12,42 H 108 V 45 H 12 Z" />
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 12,52 H 108 V 55 H 12 Z" />
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 12,62 H 90 V 65 H 12 Z" />
+    <!-- Two Column layout simulations -->
+    <path
+        android:fillColor="#08546A"
+        android:pathData="M 12,75 H 45 V 78 H 12 Z" />
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 12,85 H 48 V 88 H 12 Z" />
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 12,95 H 48 V 98 H 12 Z" />
+    
+    <path
+        android:fillColor="#08546A"
+        android:pathData="M 58,75 H 108 V 78 H 58 Z" />
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 58,85 H 108 V 88 H 58 Z" />
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M 58,95 H 100 V 98 H 58 Z" />
+</vector>

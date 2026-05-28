@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+  <!-- Circle Background -->
+  <path
+      android:fillColor="#E2E8F0"
+      android:pathData="M16,16m-16,0a16,16 0 1,1 32,0a16,16 0 1,1 -32,0"/>
+  <!-- User Silhouette -->
+  <path
+      android:fillColor="#475569"
+      android:pathData="M16,8a4,4 0 1,0 0,8 4,4 0 1,0 0,-8zM16,18c-4.42,0 -8,2.24 -8,5v1h16v-1c0,-2.76 -3.58,-5 -8,-5z"/>
+</vector>
