@@ -1,18 +1,26 @@
 [
     {
-        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/fragment_onboarding.xml",
-        "source": "com.kharchamate.resumaster.app-main-53:/layout/fragment_onboarding.xml"
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/item_template.xml",
+        "source": "com.kharchamate.resumaster.app-main-53:/layout/item_template.xml"
     },
     {
-        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/activity_main.xml",
-        "source": "com.kharchamate.resumaster.app-main-53:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_onboarding.xml",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_onboarding.xml"
     },
     {
-        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/activity_onboarding.xml",
-        "source": "com.kharchamate.resumaster.app-main-53:/layout/activity_onboarding.xml"
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\fragment_onboarding.xml",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\fragment_onboarding.xml"
     },
     {
-        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/activity_splash.xml",
-        "source": "com.kharchamate.resumaster.app-main-53:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-mergeDebugResources-50:/layout/activity_dashboard.xml",
+        "source": "com.kharchamate.resumaster.app-main-53:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-mergeDebugResources-50:\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_splash.xml"
     }
 ]

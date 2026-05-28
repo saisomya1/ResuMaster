@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.databinding:viewbinding:8.3.2] C:\Users\Anviam\.gradle\caches\transforms-3\08db16bd09b6ad51b85ddc3d7423b41b\transformed\jetified-viewbinding-8.3.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.9] C:\Users\Anviam\.gradle\caches\transforms-3\37e6b89538d4424b2dbd1abb6ca3f990\transformed\navigation-common-2.8.9\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.8.9] C:\Users\Anviam\.gradle\caches\transforms-3\df661044baa7c82b02564eb7df03eab3\transformed\navigation-common-ktx-2.8.9\AndroidManifest.xml:2:1-7:12
@@ -77,8 +77,8 @@ MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Anviam\.gradle\caches\t
 	xmlns:android
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:5:5-31:19
-INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:5:5-31:19
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:5:5-35:19
+INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:5:5-35:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Anviam\.gradle\caches\transforms-3\88c5e483eea0a4412554bece26c1db76\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Anviam\.gradle\caches\transforms-3\88c5e483eea0a4412554bece26c1db76\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Anviam\.gradle\caches\transforms-3\e4848dcdb53895fc3933e95f389fc9e9\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -141,12 +141,18 @@ ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\Android
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:25:13-61
-activity#com.kharchamate.resumaster.MainActivity
+activity#com.kharchamate.resumaster.ui.dashboard.DashboardActivity
 ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:29:13-41
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:29:13-59
+activity#com.kharchamate.resumaster.MainActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:33:13-41
 uses-sdk
 INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml

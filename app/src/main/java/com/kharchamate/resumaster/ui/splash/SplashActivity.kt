@@ -13,10 +13,9 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.kharchamate.resumaster.MainActivity
 import com.kharchamate.resumaster.R
 import com.kharchamate.resumaster.databinding.ActivitySplashBinding
-import com.kharchamate.resumaster.ui.onboarding.OnboardingActivity
+import com.kharchamate.resumaster.ui.dashboard.DashboardActivity
 import com.kharchamate.resumaster.utils.GradientTextSpan
 import kotlinx.coroutines.launch
 import android.text.SpannableString
@@ -129,14 +128,14 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun navigateToOnboarding() {
-        startActivity(Intent(this, OnboardingActivity::class.java))
+        startActivity(Intent(this, DashboardActivity::class.java))
         finish()
         // Smooth fade transition
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 
     private fun navigateToHome() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, DashboardActivity::class.java))
         finish()
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }

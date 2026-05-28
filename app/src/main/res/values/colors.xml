@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Branding (STRICT) -->
-    <color name="primary">#6C4DFF</color>
-    <color name="secondary">#8B6DFF</color>
-    <color name="background">#FFFFFF</color>
+    <!-- Branding (STRICT Blue + Teal Theme) -->
+    <color name="primary">#08546A</color> <!-- Deep Blue-Teal -->
+    <color name="secondary">#0DCDAA</color> <!-- Vibrant Teal -->
+    <color name="primary_light">#E0F2F1</color> <!-- Light Teal for backgrounds -->
+    <color name="background">#F5F8FA</color> <!-- Light Clean UI Background -->
+    <color name="card_bg">#FFFFFF</color>
 
     <!-- Text -->
-    <color name="textPrimary">#1D2433</color>
-    <color name="textSecondary">#7B8190</color>
+    <color name="textPrimary">#16222F</color>
+    <color name="textSecondary">#607B96</color>
     <color name="textOnPrimary">#FFFFFF</color>
+    <color name="textTeal">#0DCDAA</color>
 
     <!-- Splash -->
-    <color name="splash_gradient_start">#0A0F3D</color>
-    <color name="splash_gradient_end">#291A7A</color>
+    <color name="splash_gradient_start">#032F3B</color>
+    <color name="splash_gradient_end">#08546A</color>
     <color name="splash_progress_bg">#33FFFFFF</color>
     <color name="splash_text_secondary">#C9CCDA</color>
 
     <!-- Indicators -->
-    <color name="indicator_active">#6C4DFF</color>
+    <color name="indicator_active">#0DCDAA</color>
     <color name="indicator_inactive">#D9D9E5</color>
 
     <!-- Actions -->
-    <color name="action_button_bg">#6C4DFF</color>
+    <color name="action_button_bg">#0DCDAA</color>
     <color name="action_button_bg_disabled">#D9D9E5</color>
     <color name="action_button_ripple">#22FFFFFF</color>
+
+    <!-- Quick Action Card Backgrounds -->
+    <color name="bg_create_resume">#E4F7F5</color>
+    <color name="bg_my_resumes">#E8F2FF</color>
+    <color name="bg_ai_improve">#FFFBE6</color>
+    <color name="bg_download_pdf">#ECF8EC</color>
+
+    <!-- Quick Action Card Icons/Texts -->
+    <color name="icon_create_resume">#00B69B</color>
+    <color name="icon_my_resumes">#3B82F6</color>
+    <color name="icon_ai_improve">#F59E0B</color>
+    <color name="icon_download_pdf">#10B981</color>
 </resources>

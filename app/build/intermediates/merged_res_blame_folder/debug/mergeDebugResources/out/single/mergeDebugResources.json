@@ -4,16 +4,12 @@
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\xml\\backup_rules.xml"
-    },
-    {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\mipmap-mdpi\\ic_launcher_round.png"
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_notification.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_notification.xml"
     },
     {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_onboarding_resume_templates.png.flat",
@@ -28,6 +24,110 @@
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\onboarding_resume.png"
     },
     {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_home.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_bg_saved_badge.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/bg_saved_badge.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_img_resume_illustration.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/img_resume_illustration.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_ai_improve.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_ai_improve.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_ic_arrow_right_24.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\ic_arrow_right_24.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_profile_tab.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_profile_tab.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_ic_launcher_foreground_resumaster.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\ic_launcher_foreground_resumaster.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_templates.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_templates.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_profile.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_profile.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_my_resumes.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_my_resumes.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\layout_fragment_onboarding.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\fragment_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_indicator_dot_active_modern.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\indicator_dot_active_modern.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_indicator_dot_inactive.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\indicator_dot_inactive.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_splash_progress_bg.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\splash_progress_bg.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_resume.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_resume.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_ic_check_24.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\ic_check_24.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/layout_item_template.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/layout/item_template.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_onboarding_ai_robot.png.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\onboarding_ai_robot.png"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\layout_activity_onboarding.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/layout_activity_dashboard.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_menu.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_btn_onboarding_next.xml.flat",
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\btn_onboarding_next.xml"
     },
@@ -40,16 +140,16 @@
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\version_bg.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_img_template_placeholder.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/img_template_placeholder.xml"
     },
     {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_indicator_dot_inactive_modern.xml.flat",
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\indicator_dot_inactive_modern.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_progress_indicator.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_progress_indicator.xml"
     },
     {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -60,20 +160,20 @@
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\splash_bg_gradient.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_resumaster_app_logo.png.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\resumaster_app_logo.png"
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_download.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_download.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_ic_arrow_right_24.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\ic_arrow_right_24.xml"
+        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_resumaster_app_logo.png.flat",
+        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\resumaster_app_logo.png"
     },
     {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\layout_activity_splash.xml.flat",
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_ic_launcher_foreground_resumaster.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\ic_launcher_foreground_resumaster.xml"
+        "merged": "com.kharchamate.resumaster.app-debug-51:/drawable_ic_create.xml.flat",
+        "source": "com.kharchamate.resumaster.app-main-53:/drawable/ic_create.xml"
     },
     {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-mdpi_ic_launcher.png.flat",
@@ -88,44 +188,12 @@
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\indicator_dot_active.xml"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\layout_fragment_onboarding.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\fragment_onboarding.xml"
-    },
-    {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_indicator_dot_active_modern.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\indicator_dot_active_modern.xml"
-    },
-    {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_indicator_dot_inactive.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\indicator_dot_inactive.xml"
-    },
-    {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_splash_progress_bg.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\splash_progress_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_ic_check_24.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\ic_check_24.xml"
-    },
-    {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\drawable_onboarding_ai_robot.png.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\drawable\\onboarding_ai_robot.png"
-    },
-    {
-        "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\layout_activity_onboarding.xml.flat",
-        "source": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-main-53:\\layout\\activity_onboarding.xml"
-    },
-    {
-        "merged": "com.kharchamate.resumaster.app-debug-51:/xml_data_extraction_rules.xml.flat",
-        "source": "com.kharchamate.resumaster.app-main-53:/xml/data_extraction_rules.xml"
     },
     {
         "merged": "C:\\Users\\Anviam\\.gradle\\daemon\\8.4\\com.kharchamate.resumaster.app-debug-51:\\mipmap-hdpi_ic_launcher_round.png.flat",

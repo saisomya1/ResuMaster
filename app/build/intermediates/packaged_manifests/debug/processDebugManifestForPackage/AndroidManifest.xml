@@ -41,6 +41,9 @@
             android:name="com.kharchamate.resumaster.ui.onboarding.OnboardingActivity"
             android:exported="false" />
         <activity
+            android:name="com.kharchamate.resumaster.ui.dashboard.DashboardActivity"
+            android:exported="false" />
+        <activity
             android:name="com.kharchamate.resumaster.MainActivity"
             android:exported="false" />
 
