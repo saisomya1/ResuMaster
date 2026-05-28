@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Branding (night) -->
+    <color name="primary">#6C4DFF</color>
+    <color name="secondary">#8B6DFF</color>
+    <color name="background">#0B0F24</color>
+
+    <!-- Text -->
+    <color name="textPrimary">#EEF0FF</color>
+    <color name="textSecondary">#B2B6C8</color>
+    <color name="textOnPrimary">#FFFFFF</color>
+
+    <!-- Splash (same as brand) -->
+    <color name="splash_gradient_start">#0A0F3D</color>
+    <color name="splash_gradient_end">#291A7A</color>
+    <color name="splash_progress_bg">#33FFFFFF</color>
+    <color name="splash_text_secondary">#C9CCDA</color>
+
+    <!-- Indicators -->
+    <color name="indicator_active">#6C4DFF</color>
+    <color name="indicator_inactive">#3C3F59</color>
+
+    <!-- Actions -->
+    <color name="action_button_bg">#6C4DFF</color>
+    <color name="action_button_bg_disabled">#3C3F59</color>
+    <color name="action_button_ripple">#22FFFFFF</color>
+</resources>

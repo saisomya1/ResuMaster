@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ResuMaster</string>
+    <string name="splash_subtitle">AI Powered Resume Builder</string>
+    <string name="splash_version">v1.0.0</string>
+    <string name="developed_by">Developed by\nSai Somya Ranjan</string>
+    
+    <string name="btn_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    
+    <!-- Onboarding 1 -->
+    <string name="onboarding_1_title"><![CDATA[Create Stunning<br>Resumes <font color="#6C4DFF">Effortlessly</font>]]></string>
+    <string name="onboarding_1_desc">Build professional, ATS-friendly resumes that get you noticed by top recruiters.</string>
+    
+    <!-- Onboarding 2 -->
+    <string name="onboarding_2_title"><![CDATA[<font color="#6C4DFF">AI Powered</font><br>Smart Suggestions]]></string>
+    <string name="onboarding_2_desc">Get AI suggestions for skills, summary, experience, and more to enhance your resume.</string>
+    
+    <!-- Onboarding 3 -->
+    <string name="onboarding_3_title"><![CDATA[Multiple Templates<br>For <font color="#6C4DFF">Every Career</font>]]></string>
+    <string name="onboarding_3_desc">Choose from a variety of modern and professional templates that suit your style.</string>
+</resources>
