@@ -27,6 +27,7 @@
     <color name="action_button_bg">#0DCDAA</color>
     <color name="action_button_bg_disabled">#D9D9E5</color>
     <color name="action_button_ripple">#22FFFFFF</color>
+    <color name="white">#D9D9E5</color>
 
     <!-- Quick Action Card Backgrounds -->
     <color name="bg_create_resume">#E4F7F5</color>

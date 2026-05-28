@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:1-52:12
 MERGED from [androidx.databinding:viewbinding:8.3.2] C:\Users\Anviam\.gradle\caches\transforms-3\08db16bd09b6ad51b85ddc3d7423b41b\transformed\jetified-viewbinding-8.3.2\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.8.9] C:\Users\Anviam\.gradle\caches\transforms-3\37e6b89538d4424b2dbd1abb6ca3f990\transformed\navigation-common-2.8.9\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-common-ktx:2.8.9] C:\Users\Anviam\.gradle\caches\transforms-3\df661044baa7c82b02564eb7df03eab3\transformed\navigation-common-ktx-2.8.9\AndroidManifest.xml:2:1-7:12
@@ -77,8 +77,8 @@ MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Anviam\.gradle\caches\t
 	xmlns:android
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:5:5-42:19
-INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:5:5-42:19
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:5:5-50:19
+INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:5:5-50:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Anviam\.gradle\caches\transforms-3\88c5e483eea0a4412554bece26c1db76\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Anviam\.gradle\caches\transforms-3\88c5e483eea0a4412554bece26c1db76\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Anviam\.gradle\caches\transforms-3\e4848dcdb53895fc3933e95f389fc9e9\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -153,42 +153,90 @@ ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\Android
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:32:69-93
 	android:name
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:32:19-68
-activity#com.kharchamate.resumaster.ui.dashboard.MyResumeActivity
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:33:9-92
+activity#com.kharchamate.resumaster.ui.template.TemplateSelectionActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:33:9-100
 	android:exported
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:33:65-89
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:33:73-97
 	android:name
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:33:19-64
-activity#com.kharchamate.resumaster.ui.dashboard.AiImproveActivity
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:34:9-93
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:33:19-72
+activity#com.kharchamate.resumaster.ui.builder.ResumeBuilderActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:34:9-95
 	android:exported
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:34:66-90
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:34:68-92
 	android:name
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:34:19-65
-activity#com.kharchamate.resumaster.ui.dashboard.ExportResumeActivity
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:35:9-96
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:34:19-67
+activity#com.kharchamate.resumaster.ui.builder.EducationActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:35:9-91
 	android:exported
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:35:69-93
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:35:64-88
 	android:name
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:35:19-68
-activity#com.kharchamate.resumaster.ui.dashboard.TemplateActivity
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:35:19-63
+activity#com.kharchamate.resumaster.ui.builder.ExperienceActivity
 ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:36:9-92
 	android:exported
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:36:65-89
 	android:name
 		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:36:19-64
+activity#com.kharchamate.resumaster.ui.builder.SkillsProjectsActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:37:9-96
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:37:69-93
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:37:19-68
+activity#com.kharchamate.resumaster.ui.builder.SummaryPreviewActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:38:9-96
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:38:69-93
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:38:19-68
+activity#com.kharchamate.resumaster.ui.builder.AiResumeActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:39:9-90
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:39:63-87
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:39:19-62
+activity#com.kharchamate.resumaster.ui.builder.ResumePdfPreviewActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:40:9-98
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:40:71-95
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:40:19-70
+activity#com.kharchamate.resumaster.ui.dashboard.MyResumeActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:41:9-92
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:41:65-89
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:41:19-64
+activity#com.kharchamate.resumaster.ui.dashboard.AiImproveActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:42:9-93
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:42:66-90
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:42:19-65
+activity#com.kharchamate.resumaster.ui.dashboard.ExportResumeActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:43:9-96
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:43:69-93
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:43:19-68
+activity#com.kharchamate.resumaster.ui.dashboard.TemplateActivity
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:44:9-92
+	android:exported
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:44:65-89
+	android:name
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:44:19-64
 activity#com.kharchamate.resumaster.ui.dashboard.ProfileActivity
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:37:9-91
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:45:9-91
 	android:exported
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:37:64-88
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:45:64-88
 	android:name
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:37:19-63
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:45:19-63
 activity#com.kharchamate.resumaster.MainActivity
-ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:39:9-41:40
+ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:41:13-37
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:40:13-41
+		ADDED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml:48:13-41
 uses-sdk
 INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Anviam\AndroidStudioProjects\ResuMaster\app\src\main\AndroidManifest.xml

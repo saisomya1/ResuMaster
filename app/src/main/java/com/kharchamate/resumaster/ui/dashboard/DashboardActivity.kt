@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.kharchamate.resumaster.R
 import com.kharchamate.resumaster.databinding.ActivityDashboardBinding
 
+
 class DashboardActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardBinding
@@ -81,14 +82,21 @@ class DashboardActivity : AppCompatActivity() {
 
     private fun setupQuickActions() {
         binding.btnContinueResume.setOnClickListener {
-            startActivity(Intent(this, CreateResumeActivity::class.java))
+            // Dummy check for incomplete resume
+            val hasIncompleteResume = false
+            
+            if (hasIncompleteResume) {
+                startActivity(Intent(this, com.kharchamate.resumaster.ui.builder.ResumeBuilderActivity::class.java))
+            } else {
+                startActivity(Intent(this, com.kharchamate.resumaster.ui.template.TemplateSelectionActivity::class.java))
+            }
         }
         binding.btnViewAllActions.setOnClickListener {
             showToast("Viewing all Quick Actions")
         }
 
         binding.cardCreateResume.setOnClickListener {
-            startActivity(Intent(this, CreateResumeActivity::class.java))
+            startActivity(Intent(this, com.kharchamate.resumaster.ui.template.TemplateSelectionActivity::class.java))
         }
         binding.cardMyResumes.setOnClickListener {
             startActivity(Intent(this, MyResumeActivity::class.java))
@@ -167,7 +175,7 @@ class DashboardActivity : AppCompatActivity() {
     // Helper property to modify textColor directly
     private var TextView.textColor: Int
         get() = currentTextColor
-        set(value) = setTextColor(value)
+        set(value) { setTextColor(value) }
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()

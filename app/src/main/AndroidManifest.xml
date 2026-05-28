@@ -30,6 +30,14 @@
             android:exported="false" />
 
         <activity android:name=".ui.dashboard.CreateResumeActivity" android:exported="false" />
+        <activity android:name=".ui.template.TemplateSelectionActivity" android:exported="false" />
+        <activity android:name=".ui.builder.ResumeBuilderActivity" android:exported="false" />
+        <activity android:name=".ui.builder.EducationActivity" android:exported="false" />
+        <activity android:name=".ui.builder.ExperienceActivity" android:exported="false" />
+        <activity android:name=".ui.builder.SkillsProjectsActivity" android:exported="false" />
+        <activity android:name=".ui.builder.SummaryPreviewActivity" android:exported="false" />
+        <activity android:name=".ui.builder.AiResumeActivity" android:exported="false" />
+        <activity android:name=".ui.builder.ResumePdfPreviewActivity" android:exported="false" />
         <activity android:name=".ui.dashboard.MyResumeActivity" android:exported="false" />
         <activity android:name=".ui.dashboard.AiImproveActivity" android:exported="false" />
         <activity android:name=".ui.dashboard.ExportResumeActivity" android:exported="false" />

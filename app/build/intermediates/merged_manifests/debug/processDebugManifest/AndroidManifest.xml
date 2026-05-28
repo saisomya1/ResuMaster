@@ -47,6 +47,30 @@
             android:name="com.kharchamate.resumaster.ui.dashboard.CreateResumeActivity"
             android:exported="false" />
         <activity
+            android:name="com.kharchamate.resumaster.ui.template.TemplateSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.builder.ResumeBuilderActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.builder.EducationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.builder.ExperienceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.builder.SkillsProjectsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.builder.SummaryPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.builder.AiResumeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.kharchamate.resumaster.ui.builder.ResumePdfPreviewActivity"
+            android:exported="false" />
+        <activity
             android:name="com.kharchamate.resumaster.ui.dashboard.MyResumeActivity"
             android:exported="false" />
         <activity
