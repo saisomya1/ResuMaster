@@ -20,7 +20,6 @@ class TemplateAdapter(
     fun setSelectedTemplate(templateId: String?) {
         val previousId = selectedTemplateId
         selectedTemplateId = templateId
-        // Only notify items that changed state
         currentList.forEachIndexed { index, template ->
             if (template.id == previousId || template.id == templateId) {
                 notifyItemChanged(index)
@@ -30,9 +29,7 @@ class TemplateAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TemplateViewHolder {
         val binding = ItemTemplateBinding.inflate(
-            LayoutInflater.from(parent.context),
-            parent,
-            false
+            LayoutInflater.from(parent.context), parent, false
         )
         return TemplateViewHolder(binding)
     }
@@ -45,26 +42,38 @@ class TemplateAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(template: TemplateModel, isSelected: Boolean) {
+            val context = binding.root.context
+
+            // ── Template name & category ──────────────────────────────────────
             binding.tvTemplateName.text = template.name
             binding.tvTemplateCategory.text = template.category
-            binding.ivTemplatePreview.setImageResource(template.previewImageRes)
 
-            // PRO badge
-            binding.tvProBadge.visibility = if (template.isPremium) View.VISIBLE else View.GONE
+            // ── Wireframe preview ─────────────────────────────────────────────
+            // Clear previous inflation to avoid duplicates on RecyclerView recycle
+            binding.flTemplatePreviewContainer.removeAllViews()
+            LayoutInflater.from(context).inflate(
+                template.previewLayoutRes,
+                binding.flTemplatePreviewContainer,
+                true
+            )
 
-            // Selection overlay
-            binding.overlaySelected.visibility = if (isSelected) View.VISIBLE else View.GONE
+            // ── PRO badge ─────────────────────────────────────────────────────
+            binding.tvProBadge.visibility =
+                if (template.isPremium) View.VISIBLE else View.GONE
 
-            // Card stroke — selected = teal, default = gray
-            val strokeColor = if (isSelected) {
-                ContextCompat.getColor(binding.root.context, R.color.strokeSelected)
+            // ── Selection overlay ─────────────────────────────────────────────
+            binding.overlaySelected.visibility =
+                if (isSelected) View.VISIBLE else View.GONE
+
+            // ── Card stroke — teal when selected, subtle gray otherwise ───────
+            binding.cardTemplate.strokeColor = if (isSelected) {
+                ContextCompat.getColor(context, R.color.strokeSelected)
             } else {
-                ContextCompat.getColor(binding.root.context, R.color.strokeDefault)
+                ContextCompat.getColor(context, R.color.strokeDefault)
             }
-            val strokeWidth = if (isSelected) 3 else 1
-            binding.cardTemplate.strokeColor = strokeColor
-            binding.cardTemplate.strokeWidth = strokeWidth
+            binding.cardTemplate.strokeWidth = if (isSelected) 3 else 1
 
+            // ── Click ─────────────────────────────────────────────────────────
             binding.cardTemplate.setOnClickListener {
                 onTemplateClick(template)
             }

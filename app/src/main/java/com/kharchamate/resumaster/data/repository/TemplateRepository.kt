@@ -14,15 +14,15 @@ class TemplateRepository {
                     id = "tpl_modern_blue",
                     name = "Modern Blue",
                     category = "Modern",
-                    previewImageRes = R.drawable.template_modern,
-                    description = "A sleek, modern design with blue accents.",
+                    previewLayoutRes = R.layout.layout_preview_modern,
+                    description = "A sleek, modern design with blue-teal accents.",
                     isPremium = false
                 ),
                 TemplateModel(
                     id = "tpl_executive_pro",
                     name = "Executive Pro",
                     category = "Executive",
-                    previewImageRes = R.drawable.template_professional,
+                    previewLayoutRes = R.layout.layout_preview_professional,
                     description = "Classic layout for senior professionals.",
                     isPremium = true
                 ),
@@ -30,7 +30,7 @@ class TemplateRepository {
                     id = "tpl_professional_ats",
                     name = "Professional ATS",
                     category = "Standard",
-                    previewImageRes = R.drawable.template_corporate,
+                    previewLayoutRes = R.layout.layout_preview_corporate,
                     description = "Optimized for Applicant Tracking Systems.",
                     isPremium = false
                 ),
@@ -38,7 +38,7 @@ class TemplateRepository {
                     id = "tpl_minimal_clean",
                     name = "Minimal Clean",
                     category = "Minimalist",
-                    previewImageRes = R.drawable.template_minimal,
+                    previewLayoutRes = R.layout.layout_preview_minimal,
                     description = "Clean and simple with plenty of whitespace.",
                     isPremium = false
                 ),
@@ -46,7 +46,7 @@ class TemplateRepository {
                     id = "tpl_creative_designer",
                     name = "Creative Designer",
                     category = "Creative",
-                    previewImageRes = R.drawable.template_creative,
+                    previewLayoutRes = R.layout.layout_preview_creative,
                     description = "Showcase your creativity with this bold layout.",
                     isPremium = true
                 )

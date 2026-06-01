@@ -43,6 +43,7 @@
         <activity android:name=".ui.dashboard.ExportResumeActivity" android:exported="false" />
         <activity android:name=".ui.dashboard.TemplateActivity" android:exported="false" />
         <activity android:name=".ui.dashboard.ProfileActivity" android:exported="false" />
+        <activity android:name=".ui.debug.FirebaseDebugActivity" android:exported="false" />
 
         <activity
             android:name=".MainActivity"

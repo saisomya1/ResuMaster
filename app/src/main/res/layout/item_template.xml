@@ -8,7 +8,7 @@
     android:layout_marginBottom="8dp"
     app:cardCornerRadius="16dp"
     app:cardElevation="3dp"
-    app:strokeWidth="2dp"
+    app:strokeWidth="1dp"
     app:strokeColor="@color/strokeDefault">
 
     <LinearLayout
@@ -16,25 +16,21 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Preview Image Container -->
+        <!-- Preview container: inflates real wireframe XML -->
         <FrameLayout
+            android:id="@+id/flTemplatePreviewContainer"
             android:layout_width="match_parent"
-            android:layout_height="150dp">
+            android:layout_height="150dp"
+            android:clipChildren="true"
+            android:clipToPadding="true">
 
-            <ImageView
-                android:id="@+id/ivTemplatePreview"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@drawable/img_template_placeholder" />
-
-            <!-- PRO Badge -->
+            <!-- PRO Badge overlaid top-right -->
             <TextView
                 android:id="@+id/tvProBadge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|end"
-                android:layout_margin="8dp"
+                android:layout_margin="6dp"
                 android:background="@drawable/bg_pro_badge"
                 android:paddingStart="6dp"
                 android:paddingEnd="6dp"
@@ -44,19 +40,21 @@
                 android:textColor="#FFFFFF"
                 android:textSize="9sp"
                 android:textStyle="bold"
-                android:visibility="gone" />
+                android:visibility="gone"
+                android:elevation="4dp" />
 
-            <!-- Selected Check Overlay -->
+            <!-- Selected overlay -->
             <FrameLayout
                 android:id="@+id/overlaySelected"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#662196F3"
+                android:background="#882196F3"
+                android:elevation="2dp"
                 android:visibility="gone">
 
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_check_circle"
                     app:tint="#FFFFFF" />
@@ -76,7 +74,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start"
-                android:text="Modern Blue"
                 android:textColor="@color/textPrimary"
                 android:textSize="12sp"
                 android:textStyle="bold"
@@ -89,7 +86,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
                 android:gravity="start"
-                android:text="Modern"
                 android:textColor="@color/textSecondary"
                 android:textSize="10sp"
                 android:maxLines="1"
