@@ -6,7 +6,6 @@ import android.content.pm.PackageManager
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -20,18 +19,22 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kharchamate.resumaster.R
 import com.kharchamate.resumaster.data.repository.ResumeRepository
+import com.kharchamate.resumaster.data.repository.TemplateRepository
 import com.kharchamate.resumaster.databinding.ActivityDashboardBinding
-import kotlinx.coroutines.launch
-import com.kharchamate.resumaster.util.enableEdgeToEdge
 import com.kharchamate.resumaster.util.applySystemInsets
-
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import kotlinx.coroutines.launch
 
 class DashboardActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardBinding
-    
+    private lateinit var templateAdapter: TemplateAdapter
+
     private val viewModel: DashboardViewModel by viewModels {
-        DashboardViewModelFactory(ResumeRepository(this.applicationContext))
+        DashboardViewModelFactory(
+            resumeRepository = ResumeRepository(this.applicationContext),
+            templateRepository = TemplateRepository()
+        )
     }
 
     // Permission launcher for Android 13+ notifications
@@ -40,7 +43,7 @@ class DashboardActivity : AppCompatActivity() {
             if (isGranted) {
                 // Permission granted
             } else {
-                // Permission denied - handle gracefully, show toast or ignore since it's just a dashboard
+                // Permission denied - handle gracefully
             }
         }
 
@@ -48,7 +51,7 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        
+
         enableEdgeToEdge()
         binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
@@ -60,24 +63,39 @@ class DashboardActivity : AppCompatActivity() {
         setupTemplates()
         setupRecentResume()
         setupBottomNavigation()
-        
+
         observeViewModel()
     }
 
     private fun observeViewModel() {
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.resumeProgress.collect { progress ->
-                    binding.circularProgress.progress = progress
-                    binding.progressBarHorizontal.progress = progress
-                    binding.tvProgressPercentage.text = "${progress}%"
-                    
-                    if (progress == 0) {
-                        binding.tvProgressStatus.text = "Start building your resume to increase completion percentage."
-                    } else if (progress < 100) {
-                        binding.tvProgressStatus.text = "You're almost there! Complete more sections to make it perfect."
-                    } else {
-                        binding.tvProgressStatus.text = "Your resume is 100% complete! Ready to land your dream job."
+                // Observe resume completion progress
+                launch {
+                    viewModel.resumeProgress.collect { progress ->
+                        binding.circularProgress.progress = progress
+                        binding.progressBarHorizontal.progress = progress
+                        binding.tvProgressPercentage.text = "${progress}%"
+
+                        binding.tvProgressStatus.text = when {
+                            progress == 0 -> "Start building your resume to increase completion percentage."
+                            progress < 100 -> "You're almost there! Complete more sections to make it perfect."
+                            else -> "Your resume is 100% complete! Ready to land your dream job."
+                        }
+                    }
+                }
+
+                // Observe template list
+                launch {
+                    viewModel.templates.collect { templates ->
+                        templateAdapter.submitList(templates)
+                    }
+                }
+
+                // Observe selected template — update adapter highlight
+                launch {
+                    viewModel.selectedTemplateId.collect { selectedId ->
+                        templateAdapter.setSelectedTemplate(selectedId)
                     }
                 }
             }
@@ -85,15 +103,11 @@ class DashboardActivity : AppCompatActivity() {
     }
 
     private fun setupStatusBar() {
-        // Change status bar to transparent for edge-to-edge
         window.statusBarColor = Color.TRANSPARENT
-        
-        // Ensure status bar icons and text are dark
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
     }
 
     private fun checkFirstTimePermissions() {
-        // Request Notification permission for Android 13+ (API 33+)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ContextCompat.checkSelfPermission(
                     this,
@@ -119,9 +133,7 @@ class DashboardActivity : AppCompatActivity() {
 
     private fun setupQuickActions() {
         binding.btnContinueResume.setOnClickListener {
-            // Dummy check for incomplete resume
             val hasIncompleteResume = false
-            
             if (hasIncompleteResume) {
                 startActivity(Intent(this, com.kharchamate.resumaster.ui.builder.ResumeBuilderActivity::class.java))
             } else {
@@ -131,7 +143,6 @@ class DashboardActivity : AppCompatActivity() {
         binding.btnViewAllActions.setOnClickListener {
             showToast("Viewing all Quick Actions")
         }
-
         binding.cardCreateResume.setOnClickListener {
             startActivity(Intent(this, com.kharchamate.resumaster.ui.template.TemplateSelectionActivity::class.java))
         }
@@ -151,13 +162,16 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(Intent(this, TemplateActivity::class.java))
         }
 
-        val templates = listOf("Modern", "Professional", "Minimal", "Corporate", "Creative")
-        val adapter = TemplateAdapter(templates) { templateName ->
-            showToast("Template Selected: $templateName")
+        templateAdapter = TemplateAdapter { template ->
+            viewModel.selectTemplate(template.id)
+            showToast("Template Selected: ${template.name}")
         }
 
-        binding.rvTemplates.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        binding.rvTemplates.adapter = adapter
+        binding.rvTemplates.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        binding.rvTemplates.adapter = templateAdapter
+        // Disable nested scroll interference
+        binding.rvTemplates.isNestedScrollingEnabled = false
     }
 
     private fun setupRecentResume() {
@@ -179,7 +193,6 @@ class DashboardActivity : AppCompatActivity() {
 
         tabs.forEachIndexed { index, (layout, icon, text) ->
             layout.setOnClickListener {
-                // Update navigation visual state
                 tabs.forEach { (_, ic, tx) ->
                     ic.setColorFilter(ContextCompat.getColor(this, R.color.textSecondary))
                     tx.textColor = ContextCompat.getColor(this, R.color.textSecondary)
@@ -190,26 +203,17 @@ class DashboardActivity : AppCompatActivity() {
                 text.textColor = ContextCompat.getColor(this, R.color.secondary)
                 text.setTypeface(null, android.graphics.Typeface.BOLD)
 
-                // Handle navigation logic
                 when (index) {
-                    0 -> {
-                        // Stay on Dashboard (Home)
-                    }
-                    1 -> {
-                        startActivity(Intent(this, MyResumeActivity::class.java))
-                    }
-                    2 -> {
-                        startActivity(Intent(this, TemplateActivity::class.java))
-                    }
-                    3 -> {
-                        startActivity(Intent(this, ProfileActivity::class.java))
-                    }
+                    0 -> { /* Stay on Dashboard */ }
+                    1 -> startActivity(Intent(this, MyResumeActivity::class.java))
+                    2 -> startActivity(Intent(this, TemplateActivity::class.java))
+                    3 -> startActivity(Intent(this, ProfileActivity::class.java))
                 }
             }
         }
     }
 
-    // Helper property to modify textColor directly
+    // Helper extension to set textColor directly on TextView
     private var TextView.textColor: Int
         get() = currentTextColor
         set(value) { setTextColor(value) }

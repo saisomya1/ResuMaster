@@ -29,6 +29,10 @@
     <color name="action_button_ripple">#22FFFFFF</color>
     <color name="white">#D9D9E5</color>
 
+    <!-- Strokes / Borders -->
+    <color name="strokeDefault">#E2E8F0</color>
+    <color name="strokeSelected">#0DCDAA</color>
+
     <!-- Quick Action Card Backgrounds -->
     <color name="bg_create_resume">#E4F7F5</color>
     <color name="bg_my_resumes">#E8F2FF</color>

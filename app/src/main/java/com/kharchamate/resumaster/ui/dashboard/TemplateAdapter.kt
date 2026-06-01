@@ -1,15 +1,32 @@
 package com.kharchamate.resumaster.ui.dashboard
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.kharchamate.resumaster.R
+import com.kharchamate.resumaster.data.model.TemplateModel
 import com.kharchamate.resumaster.databinding.ItemTemplateBinding
 
 class TemplateAdapter(
-    private val templatesList: List<String>,
-    private val onTemplateClick: (String) -> Unit
-) : RecyclerView.Adapter<TemplateAdapter.TemplateViewHolder>() {
+    private val onTemplateClick: (TemplateModel) -> Unit
+) : ListAdapter<TemplateModel, TemplateAdapter.TemplateViewHolder>(DIFF_CALLBACK) {
+
+    private var selectedTemplateId: String? = null
+
+    fun setSelectedTemplate(templateId: String?) {
+        val previousId = selectedTemplateId
+        selectedTemplateId = templateId
+        // Only notify items that changed state
+        currentList.forEachIndexed { index, template ->
+            if (template.id == previousId || template.id == templateId) {
+                notifyItemChanged(index)
+            }
+        }
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TemplateViewHolder {
         val binding = ItemTemplateBinding.inflate(
@@ -21,21 +38,46 @@ class TemplateAdapter(
     }
 
     override fun onBindViewHolder(holder: TemplateViewHolder, position: Int) {
-        val templateName = templatesList[position]
-        holder.bind(templateName)
+        holder.bind(getItem(position), getItem(position).id == selectedTemplateId)
     }
-
-    override fun getItemCount(): Int = templatesList.size
 
     inner class TemplateViewHolder(private val binding: ItemTemplateBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(name: String) {
-            binding.tvTemplateName.text = name
-            binding.ivTemplatePreview.setImageResource(R.drawable.img_template_placeholder)
-            binding.cardTemplate.setOnClickListener {
-                onTemplateClick(name)
+        fun bind(template: TemplateModel, isSelected: Boolean) {
+            binding.tvTemplateName.text = template.name
+            binding.tvTemplateCategory.text = template.category
+            binding.ivTemplatePreview.setImageResource(template.previewImageRes)
+
+            // PRO badge
+            binding.tvProBadge.visibility = if (template.isPremium) View.VISIBLE else View.GONE
+
+            // Selection overlay
+            binding.overlaySelected.visibility = if (isSelected) View.VISIBLE else View.GONE
+
+            // Card stroke — selected = teal, default = gray
+            val strokeColor = if (isSelected) {
+                ContextCompat.getColor(binding.root.context, R.color.strokeSelected)
+            } else {
+                ContextCompat.getColor(binding.root.context, R.color.strokeDefault)
             }
+            val strokeWidth = if (isSelected) 3 else 1
+            binding.cardTemplate.strokeColor = strokeColor
+            binding.cardTemplate.strokeWidth = strokeWidth
+
+            binding.cardTemplate.setOnClickListener {
+                onTemplateClick(template)
+            }
+        }
+    }
+
+    companion object {
+        private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<TemplateModel>() {
+            override fun areItemsTheSame(oldItem: TemplateModel, newItem: TemplateModel) =
+                oldItem.id == newItem.id
+
+            override fun areContentsTheSame(oldItem: TemplateModel, newItem: TemplateModel) =
+                oldItem == newItem
         }
     }
 }
