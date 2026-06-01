@@ -1,4 +1,4 @@
-package com.kharchamate.resumaster.ui.splash
+﻿package com.kharchamate.resumaster.ui.splash
 
 import android.animation.ObjectAnimator
 import android.animation.PropertyValuesHolder
@@ -21,6 +21,8 @@ import kotlinx.coroutines.launch
 import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.ForegroundColorSpan
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 class SplashActivity : AppCompatActivity() {
 
@@ -33,6 +35,8 @@ class SplashActivity : AppCompatActivity() {
 
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         // Let OS splash hand off immediately to our premium in-app splash.
         splashScreen.setKeepOnScreenCondition { false }
@@ -140,3 +144,4 @@ class SplashActivity : AppCompatActivity() {
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 }
+
