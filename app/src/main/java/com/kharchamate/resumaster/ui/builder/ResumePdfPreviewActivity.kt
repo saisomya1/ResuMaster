@@ -1,4 +1,4 @@
-package com.kharchamate.resumaster.ui.builder
+﻿package com.kharchamate.resumaster.ui.builder
 
 import android.content.Intent
 import android.graphics.Color
@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import com.kharchamate.resumaster.databinding.ActivityResumePdfPreviewBinding
 import com.kharchamate.resumaster.ui.dashboard.DashboardActivity
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 class ResumePdfPreviewActivity : AppCompatActivity() {
 
@@ -16,13 +18,15 @@ class ResumePdfPreviewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityResumePdfPreviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         setupStatusBar()
         setupListeners()
     }
 
     private fun setupStatusBar() {
-        window.statusBarColor = Color.WHITE
+        window.statusBarColor = Color.TRANSPARENT
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
     }
 
@@ -38,3 +42,4 @@ class ResumePdfPreviewActivity : AppCompatActivity() {
         }
     }
 }
+

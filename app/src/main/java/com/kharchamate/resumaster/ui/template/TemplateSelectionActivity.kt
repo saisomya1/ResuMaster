@@ -1,4 +1,4 @@
-package com.kharchamate.resumaster.ui.template
+﻿package com.kharchamate.resumaster.ui.template
 
 import android.content.Intent
 import android.graphics.Color
@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.kharchamate.resumaster.R
 import com.kharchamate.resumaster.databinding.ActivityTemplateSelectionBinding
 import com.kharchamate.resumaster.ui.builder.ResumeBuilderActivity
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 class TemplateSelectionActivity : AppCompatActivity() {
 
@@ -20,6 +22,8 @@ class TemplateSelectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTemplateSelectionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         setupStatusBar()
         setupListeners()
@@ -27,7 +31,7 @@ class TemplateSelectionActivity : AppCompatActivity() {
     }
 
     private fun setupStatusBar() {
-        window.statusBarColor = Color.WHITE
+        window.statusBarColor = Color.TRANSPARENT
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
     }
 
@@ -65,3 +69,4 @@ class TemplateSelectionActivity : AppCompatActivity() {
         binding.rvTemplates.adapter = adapter
     }
 }
+

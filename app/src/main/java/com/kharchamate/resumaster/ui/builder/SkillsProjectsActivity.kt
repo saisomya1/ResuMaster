@@ -1,4 +1,4 @@
-package com.kharchamate.resumaster.ui.builder
+﻿package com.kharchamate.resumaster.ui.builder
 
 import android.content.Context
 import android.content.Intent
@@ -14,6 +14,8 @@ import com.kharchamate.resumaster.databinding.ActivitySkillsProjectsBinding
 import com.kharchamate.resumaster.databinding.ItemProjectFormBinding
 import org.json.JSONArray
 import org.json.JSONObject
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 class SkillsProjectsActivity : AppCompatActivity() {
 
@@ -29,6 +31,8 @@ class SkillsProjectsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySkillsProjectsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         setupStatusBar()
         setupListeners()
@@ -36,7 +40,7 @@ class SkillsProjectsActivity : AppCompatActivity() {
     }
 
     private fun setupStatusBar() {
-        window.statusBarColor = Color.WHITE
+        window.statusBarColor = Color.TRANSPARENT
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
     }
 
@@ -217,3 +221,4 @@ class SkillsProjectsActivity : AppCompatActivity() {
         return isValid
     }
 }
+

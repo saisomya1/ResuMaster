@@ -1,8 +1,10 @@
-package com.kharchamate.resumaster.ui.dashboard
+﻿package com.kharchamate.resumaster.ui.dashboard
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.kharchamate.resumaster.databinding.ActivityMyResumeBinding
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 class MyResumeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMyResumeBinding
@@ -11,9 +13,12 @@ class MyResumeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMyResumeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         binding.btnBack.setOnClickListener {
             finish()
         }
     }
 }
+

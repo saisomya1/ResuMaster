@@ -1,4 +1,4 @@
-package com.kharchamate.resumaster.ui.builder
+﻿package com.kharchamate.resumaster.ui.builder
 
 import android.content.Context
 import android.content.Intent
@@ -13,6 +13,8 @@ import com.kharchamate.resumaster.databinding.ActivityExperienceBinding
 import com.kharchamate.resumaster.databinding.ItemExperienceFormBinding
 import org.json.JSONArray
 import org.json.JSONObject
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 class ExperienceActivity : AppCompatActivity() {
 
@@ -26,6 +28,8 @@ class ExperienceActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityExperienceBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         setupStatusBar()
         setupListeners()
@@ -37,7 +41,7 @@ class ExperienceActivity : AppCompatActivity() {
     }
 
     private fun setupStatusBar() {
-        window.statusBarColor = Color.WHITE
+        window.statusBarColor = Color.TRANSPARENT
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
     }
 
@@ -192,3 +196,4 @@ class ExperienceActivity : AppCompatActivity() {
         return isValid
     }
 }
+

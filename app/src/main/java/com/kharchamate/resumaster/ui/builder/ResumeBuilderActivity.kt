@@ -1,4 +1,4 @@
-package com.kharchamate.resumaster.ui.builder
+﻿package com.kharchamate.resumaster.ui.builder
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowInsetsControllerCompat
 import com.kharchamate.resumaster.databinding.ActivityResumeBuilderBinding
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 class ResumeBuilderActivity : AppCompatActivity() {
 
@@ -41,6 +43,8 @@ class ResumeBuilderActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityResumeBuilderBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         setupStatusBar()
         setupListeners()
@@ -48,7 +52,7 @@ class ResumeBuilderActivity : AppCompatActivity() {
     }
 
     private fun setupStatusBar() {
-        window.statusBarColor = Color.WHITE
+        window.statusBarColor = Color.TRANSPARENT
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
     }
 
@@ -153,3 +157,4 @@ class ResumeBuilderActivity : AppCompatActivity() {
         return isValid
     }
 }
+

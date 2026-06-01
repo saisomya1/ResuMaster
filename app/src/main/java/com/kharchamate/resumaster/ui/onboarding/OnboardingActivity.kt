@@ -1,4 +1,4 @@
-package com.kharchamate.resumaster.ui.onboarding
+﻿package com.kharchamate.resumaster.ui.onboarding
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,6 +14,8 @@ import com.kharchamate.resumaster.R
 import com.kharchamate.resumaster.MainActivity
 import com.kharchamate.resumaster.databinding.ActivityOnboardingBinding
 import com.kharchamate.resumaster.utils.OnboardingPreferences
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 class OnboardingActivity : AppCompatActivity() {
 
@@ -25,6 +27,8 @@ class OnboardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityOnboardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         onboardingPreferences = OnboardingPreferences(this)
 
@@ -139,3 +143,4 @@ class OnboardingActivity : AppCompatActivity() {
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 }
+

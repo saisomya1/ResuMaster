@@ -16,6 +16,8 @@ import androidx.core.view.WindowInsetsControllerCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kharchamate.resumaster.R
 import com.kharchamate.resumaster.databinding.ActivityDashboardBinding
+import com.kharchamate.resumaster.util.enableEdgeToEdge
+import com.kharchamate.resumaster.util.applySystemInsets
 
 
 class DashboardActivity : AppCompatActivity() {
@@ -36,6 +38,9 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
+        enableEdgeToEdge()
+        binding.root.applySystemInsets(applyTop = true, applyBottom = true)
 
         setupStatusBar()
         checkFirstTimePermissions()
@@ -48,8 +53,8 @@ class DashboardActivity : AppCompatActivity() {
     }
 
     private fun setupStatusBar() {
-        // Change status bar to white
-        window.statusBarColor = Color.WHITE
+        // Change status bar to transparent for edge-to-edge
+        window.statusBarColor = Color.TRANSPARENT
         
         // Ensure status bar icons and text are dark
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = true
