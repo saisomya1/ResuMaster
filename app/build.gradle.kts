@@ -131,4 +131,23 @@ dependencies {
     androidTestImplementation(
         "androidx.test.espresso:espresso-core:3.6.1"
     )
+    // Firebase BOM
+    implementation(
+        platform("com.google.firebase:firebase-bom:33.12.0")
+    )
+
+// Realtime Database
+    implementation(
+        "com.google.firebase:firebase-database-ktx"
+    )
+
+// Firebase Auth
+    implementation(
+        "com.google.firebase:firebase-auth-ktx"
+    )
+
+// Analytics
+    implementation(
+        "com.google.firebase:firebase-analytics-ktx"
+    )
 }
