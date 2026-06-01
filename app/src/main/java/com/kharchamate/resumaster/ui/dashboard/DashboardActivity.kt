@@ -10,12 +10,18 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kharchamate.resumaster.R
+import com.kharchamate.resumaster.data.repository.ResumeRepository
 import com.kharchamate.resumaster.databinding.ActivityDashboardBinding
+import kotlinx.coroutines.launch
 import com.kharchamate.resumaster.util.enableEdgeToEdge
 import com.kharchamate.resumaster.util.applySystemInsets
 
@@ -23,6 +29,10 @@ import com.kharchamate.resumaster.util.applySystemInsets
 class DashboardActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDashboardBinding
+    
+    private val viewModel: DashboardViewModel by viewModels {
+        DashboardViewModelFactory(ResumeRepository(this.applicationContext))
+    }
 
     // Permission launcher for Android 13+ notifications
     private val requestPermissionLauncher =
@@ -50,6 +60,28 @@ class DashboardActivity : AppCompatActivity() {
         setupTemplates()
         setupRecentResume()
         setupBottomNavigation()
+        
+        observeViewModel()
+    }
+
+    private fun observeViewModel() {
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.resumeProgress.collect { progress ->
+                    binding.circularProgress.progress = progress
+                    binding.progressBarHorizontal.progress = progress
+                    binding.tvProgressPercentage.text = "${progress}%"
+                    
+                    if (progress == 0) {
+                        binding.tvProgressStatus.text = "Start building your resume to increase completion percentage."
+                    } else if (progress < 100) {
+                        binding.tvProgressStatus.text = "You're almost there! Complete more sections to make it perfect."
+                    } else {
+                        binding.tvProgressStatus.text = "Your resume is 100% complete! Ready to land your dream job."
+                    }
+                }
+            }
+        }
     }
 
     private fun setupStatusBar() {

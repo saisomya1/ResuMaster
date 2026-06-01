@@ -154,10 +154,19 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
 
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/ic_progress_indicator" />
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:id="@+id/circularProgress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:indicatorSize="90dp"
+                            app:trackThickness="6dp"
+                            app:indicatorColor="@color/secondary"
+                            app:trackColor="#1F859A"
+                            android:progress="0"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -170,9 +179,10 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <TextView
+                                android:id="@+id/tvProgressPercentage"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="45%"
+                                android:text="0%"
                                 android:textColor="@color/textOnPrimary"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -208,20 +218,21 @@
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/tvProgressStatus"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="You're almost there! Complete more sections to make it perfect."
+                            android:text="Start building your resume to increase completion percentage."
                             android:textColor="#D3F4FA"
                             android:textSize="11sp" />
 
-                        <!-- Linear Progress Bar -->
                         <ProgressBar
+                            android:id="@+id/progressBarHorizontal"
                             style="@android:style/Widget.ProgressBar.Horizontal"
                             android:layout_width="match_parent"
                             android:layout_height="6dp"
                             android:layout_marginTop="12dp"
-                            android:progress="45"
+                            android:progress="0"
                             android:progressTint="@color/secondary"
                             android:progressBackgroundTint="#1F859A" />
 
